@@ -19,7 +19,7 @@ public class Recipes {
     private String popularRegions;
     
     @Column(name = "estimated_calories")
-    private Integer estimatedCalories; // Change this to Integer
+    private Integer estimatedCalories; 
 
     private String ingredients;
     private String methodology;
@@ -27,7 +27,6 @@ public class Recipes {
     @Column(name = "image_url")
     private String imageUrl;
 
-    // Getters and Setters
 
     public Long getId() {
         return id;
