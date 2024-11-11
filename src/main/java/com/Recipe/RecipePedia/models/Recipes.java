@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 public class Recipes {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;

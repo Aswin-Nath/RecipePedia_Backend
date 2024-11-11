@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/api/recipes")
 public class RecipeController {
 
-    private final RecipeService recipeService;
+    private RecipeService recipeService;
 
     @Autowired
     public RecipeController(RecipeService recipeService) {
@@ -27,3 +27,4 @@ public class RecipeController {
         return ResponseEntity.ok(recipes);
     }
 }
+
