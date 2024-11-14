@@ -3,23 +3,21 @@ package com.Recipe.RecipePedia.models;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "recipelibrary")
 public class recipeLibrary{
 
     @Id
-    @Column(name="id")
     private int id;
-
-    @Column(name = "image_url")
-    private String imageUrl;  // Using camelCase for the field
-
-    @Column(name = "cook")
+    private String imageUrl;  
     private String cook;
-
-    @Column(name = "upload")
     private int upload;
-
-    // Getter and Setter methods
-
+    private String name;
+    public void setname(String name){
+        this.name=name;
+    }
+    public String getname(){
+        return name;
+    }
     public int getId() {
         return id;
     }
