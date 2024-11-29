@@ -12,6 +12,7 @@ public class recipeLibrary{
     private String cook;
     private int upload;
     private String name;
+    
     public void setname(String name){
         this.name=name;
     }

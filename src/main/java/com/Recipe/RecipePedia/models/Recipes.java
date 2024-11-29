@@ -7,8 +7,9 @@ import jakarta.persistence.*;
 public class Recipes {
 
     @Id
-    private Long id;
+    private Long postid;
 
+    private int likes;
     private String name;
     
     @Column(name = "popular_meals")
@@ -25,14 +26,20 @@ public class Recipes {
 
     @Column(name = "image_url")
     private String imageUrl;
-
-
-    public Long getId() {
-        return id;
+    public void setlikes(int likes){
+        this.likes=likes;
+    }
+    public int getlikes(){
+        return likes;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+
+    public Long getpostid() {
+        return postid;
+    }
+
+    public void setpostid(Long postid) {
+        this.postid = postid;
     }
 
     public String getName() {
